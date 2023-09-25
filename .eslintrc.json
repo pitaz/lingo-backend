@@ -1,0 +1,36 @@
+{
+    "env": {
+      "es2021": true,
+      "node": true
+    },
+    "extends": [
+      "standard-with-typescript",
+      "plugin:prettier/recommended"
+    ],
+    "overrides": [],
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module",
+      "project": ["tsconfig.json"]
+    },
+    "rules": {
+      "@typescript-eslint/no-unused-vars": "error",
+      "no-unused-vars": "off",
+      "indent": ["off", "tab"],
+      "linebreak-style": ["error", "unix"],
+      "semi": ["off", "always"],
+      "@typescript-eslint/semi": ["error", "always"],
+      "@typescript-eslint/no-invalid-void-type": "off",
+      "@typescript-eslint/strict-boolean-expressions": "off",
+      "prettier/prettier": [
+        "error",
+        {
+          "tabWidth": 4,
+          "printWidth": 150,
+          "singleQuote": false
+        }
+      ],
+      "quotes": ["error", "double"],
+      "object-curly-spacing": ["error", "always"]
+    }
+  }  
